@@ -1,0 +1,53 @@
+package numeros;
+import java.util.Scanner;
+public class calculadora {
+
+	public static void main(String[] args) {
+		metodos metodos = new metodos();
+		double unNumero=0, otroNumero=0, resultado=0;
+		String selec = null;
+Scanner Seleccion = new Scanner (System.in);
+		System.out.println("Seleccione la opcion");
+		System.out.println("+: Suma");
+		System.out.println("-: Resta");
+		System.out.println("*: Multiplicacion");
+		System.out.println("/: Division");
+		selec = Seleccion.next();
+				
+		switch(selec) {
+		case "+":
+			System.out.println("Ha seleccionado suma");
+			System.out.println("Ingrese el primer numero");
+			unNumero=Seleccion.nextInt();
+			System.out.println("Ingrese el segundo numero");
+			otroNumero=Seleccion.nextInt();
+			resultado = metodos.Sumar(unNumero, otroNumero);
+			System.out.println(unNumero+"+"+otroNumero+"="+resultado); break;
+		
+		case "-":
+			System.out.println("Ha seleccionado resta");
+			System.out.println("Ingrese el primer numero");
+			unNumero=Seleccion.nextInt();
+			System.out.println("Ingrese el segundo numero");
+			otroNumero=Seleccion.nextInt();
+			resultado = metodos.Restar(unNumero, otroNumero);
+			System.out.println(unNumero+"-"+otroNumero+"="+resultado); break;
+		case "*":
+			System.out.println("Ha seleccionado Multiplicacion");
+			System.out.println("Ingrese el primer numero");
+			unNumero=Seleccion.nextInt();
+			System.out.println("Ingrese el segundo numero");
+			otroNumero=Seleccion.nextInt();
+			resultado = metodos.Multiplicar(unNumero, otroNumero);
+			System.out.println(unNumero+"*"+otroNumero+"="+resultado); break;
+		case "/":
+			System.out.println("Ha seleccionado Division");
+			System.out.println("Ingrese el primer numero");
+			unNumero=Seleccion.nextInt();
+			System.out.println("Ingrese el segundo numero");
+			otroNumero=Seleccion.nextInt();
+			resultado = metodos.Dividir(unNumero, otroNumero);
+			System.out.println(unNumero+"/"+otroNumero+"="+resultado); break;
+		}
+	}
+}
