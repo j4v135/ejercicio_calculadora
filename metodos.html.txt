@@ -1,0 +1,27 @@
+package numeros;
+
+public class metodos {
+	public double Sumar (double unNumero, double otroNumero){
+		double resultado = 0;
+		resultado=unNumero + otroNumero;
+		return resultado;		
+	}
+	
+	public double Restar (double unNumero, double otroNumero) {
+		double resultado = 0;
+		resultado = unNumero - otroNumero;
+		return resultado;
+	}
+	
+	public double Multiplicar (double unNumero, double otroNumero) {
+	double resultado =0;
+	resultado = unNumero * otroNumero;
+	return resultado;
+	}
+	
+	public double Dividir (double unNumero, double otroNumero) {
+	double resultado =0;
+	resultado = unNumero / otroNumero;
+	return resultado;
+	}
+}
